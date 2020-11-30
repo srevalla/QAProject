@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="c963330f-3da9-4005-b742-336f91f6993d" ItemType="BusinessFlow" CreatedBy="srevalla" Created="202011300711" GingerVersion="3.6.0.0" Version="3" LastUpdateBy="srevalla" LastUpdate="202011300713" />
+<BusinessFlow Guid="c963330f-3da9-4005-b742-336f91f6993d" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="0b3faebe-219a-460e-9351-95e16d8ce443" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="c0fd3f52-74dc-41c7-b947-29ebe6becf5c" ImplicitWait="60" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="7daf0099-d64d-4e24-baa3-229ee1375686" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="9c53029a-6df1-4223-916d-24f9b5530241" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://www.google.com/" />
+<ActInputValue Guid="69651b76-d4df-4298-b2bd-406c03732772" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="10a32ed2-552f-4d22-bfee-4b681098c21f" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="50e67586-2c32-476c-a0d2-5f5bfeff2902" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="6be3d2cd-d335-4ebc-b85c-30583450705d" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+</InputValues>
+</ActBrowserElement>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="50674d7a-7771-417f-b3aa-49aa24ad3e9c" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="0b3faebe-219a-460e-9351-95e16d8ce443" ActivityName="Activity 1" Guid="6f7f209c-52c8-43f5-884b-b80a338a3fb2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="139aeb9b-43f6-4fd0-b863-db445e30007c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>
