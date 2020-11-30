@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="c963330f-3da9-4005-b742-336f91f6993d" ItemType="BusinessFlow" CreatedBy="srevalla" Created="202011300711" GingerVersion="3.6.0.0" Version="3" LastUpdateBy="srevalla" LastUpdate="202011300713" />
+<GingerRepositoryItem><Header ItemGuid="c963330f-3da9-4005-b742-336f91f6993d" ItemType="BusinessFlow" CreatedBy="srevalla" Created="202011300711" GingerVersion="3.6.0.0" Version="4" LastUpdateBy="srevalla" LastUpdate="202011300723" />
 <BusinessFlow Guid="c963330f-3da9-4005-b742-336f91f6993d" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="0b3faebe-219a-460e-9351-95e16d8ce443" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
@@ -12,6 +12,7 @@
 <ActInputValue Guid="10a32ed2-552f-4d22-bfee-4b681098c21f" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
 <ActInputValue Guid="50e67586-2c32-476c-a0d2-5f5bfeff2902" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
 <ActInputValue Guid="6be3d2cd-d335-4ebc-b85c-30583450705d" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="a7c3877d-a5cc-4440-b150-abbfe92fac12" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActBrowserElement>
 </Acts>
@@ -27,6 +28,6 @@
 </ActivitiesGroups>
 
 <TargetApplications>
-<TargetApplication AppName="MyWebApp" Guid="139aeb9b-43f6-4fd0-b863-db445e30007c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="MyWebApp" Guid="139aeb9b-43f6-4fd0-b863-db445e30007c" LastExecutingAgentName="MyWebApp - Agent 1" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </TargetApplications>
 </BusinessFlow></GingerRepositoryItem>
