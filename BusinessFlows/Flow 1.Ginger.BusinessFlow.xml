@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="c963330f-3da9-4005-b742-336f91f6993d" ItemType="BusinessFlow" CreatedBy="srevalla" Created="202011300711" GingerVersion="3.6.0.0" Version="4" LastUpdateBy="srevalla" LastUpdate="202011300723" />
+<GingerRepositoryItem><Header ItemGuid="c963330f-3da9-4005-b742-336f91f6993d" ItemType="BusinessFlow" CreatedBy="srevalla" Created="202011300711" GingerVersion="3.6.0.0" Version="8" LastUpdateBy="srevalla" LastUpdate="202011300948" />
 <BusinessFlow Guid="c963330f-3da9-4005-b742-336f91f6993d" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="0b3faebe-219a-460e-9351-95e16d8ce443" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
@@ -15,6 +15,24 @@
 <ActInputValue Guid="a7c3877d-a5cc-4440-b150-abbfe92fac12" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActBrowserElement>
+<ActBrowserElement Active="True" Description="Go to Url - Google" Guid="ac85ec02-236e-4723-b2cc-ed862ea43048" ImplicitWait="60" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="9d7c37cf-6654-42d2-958f-656ea2f4a397" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="19871450-e0bf-4bf5-bb5d-4e825c7732b1" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="5666b2d9-7a81-47d9-98ab-2bd96cb048fb" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://www.google.com/" />
+</InputValues>
+</ActBrowserElement>
+<ActUIElement Active="True" Description="Set Web Element 'q'" Guid="67d979f8-8c66-46f1-873b-6d59ce0aaa66" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="3" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="886d9c24-1d3d-48b0-9a9f-a48cf925bcc3" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ByName" />
+<ActInputValue Guid="08a06529-6b33-4d29-9618-8ae647b2edfc" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="q" />
+<ActInputValue Guid="95c5e974-dc0f-4681-ae7e-e1543fa0a180" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="d55eab04-6d32-4d36-9833-b7c3a7415477" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetValue" />
+<ActInputValue Guid="c907abb3-8885-4e33-9b88-d304d39bab8b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="QA Testing" />
+<ActInputValue Guid="c04b4ed8-4ef5-4198-900b-8add19b66249" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="24c9a081-e18f-41e0-9648-84f4e85aa525" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
 </Acts>
 </Activity>
 </Activities>
